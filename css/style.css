@@ -37,9 +37,9 @@ body {
   background-position-x: 0; }
 
 .slider input[type="radio"].radio2:checked ~ .slide {
-  background-position-x: -780px; }
+  background-position-x: -400px; }
 
 .slider input[type="radio"].radio3:checked ~ .slide {
-  background-position-x: -1360px; }
+  background-position-x: -800px; }
 
 /*# sourceMappingURL=style.css.map */
