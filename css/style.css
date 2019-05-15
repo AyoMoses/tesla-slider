@@ -40,6 +40,6 @@ body {
   background-position-x: -780px; }
 
 .slider input[type="radio"].radio3:checked ~ .slide {
-  background-position-x: 0; }
+  background-position-x: -1360px; }
 
 /*# sourceMappingURL=style.css.map */
