@@ -50,12 +50,25 @@ body {
     background-position-x: -800px;
 }
 
+//opacity to 1 when each slide is checked
+.slider input[type="radio"].radio1:checked ~ .text1 {
+    opacity: 1;
+}
+.slider input[type="radio"].radio2:checked ~ .text2 {
+    opacity: 1;
+}
+.slider input[type="radio"].radio3:checked ~ .text3 {
+    opacity: 1;
+}
+
 .text-slide {
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 2;
     color: #fff;
+    text-align: center;
+    opacity: 0;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -70,5 +83,13 @@ body {
     & h2 {
         margin: 0;
         padding: 0;
+        font-size: 6em;
+        line-height: 0.8em;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+    }
+
+    & p {
+        font-size: 20px;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, .5);
     }
 }
