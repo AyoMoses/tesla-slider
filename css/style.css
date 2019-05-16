@@ -42,4 +42,24 @@ body {
 .slider input[type="radio"].radio3:checked ~ .slide {
   background-position-x: -800px; }
 
+.text-slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s; }
+  .text-slide h2 {
+    margin: 0;
+    padding: 0; }
+
 /*# sourceMappingURL=style.css.map */
