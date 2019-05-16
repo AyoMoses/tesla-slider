@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
+@mixin desktopFirst($media) {
+    @media screen and (max-width: $media/16+em)  {
+        @content;
+    }
+}
+@include desktopFirst(960) {
+
+}
+@include desktopFirst(685) {
+
+}
+@include desktopFirst(441) {
+
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -44,10 +59,10 @@ body {
     background-position-x: 0;
 }
 .slider input[type="radio"].radio2:checked ~ .slide {
-    background-position-x: -400px;
+    background-position-x: -200px;
 }
 .slider input[type="radio"].radio3:checked ~ .slide {
-    background-position-x: -800px;
+    background-position-x: -400px;
 }
 
 //opacity to 1 when each slide is checked
@@ -86,10 +101,30 @@ body {
         font-size: 6em;
         line-height: 0.8em;
         text-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+
+        @include desktopFirst(960) {
+            
+        }
+        @include desktopFirst(685) {
+        
+        }
+        @include desktopFirst(441) {
+        
+        }
     }
 
     & p {
         font-size: 20px;
         text-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+
+        @include desktopFirst(960) {
+
+        }
+        @include desktopFirst(685) {
+        
+        }
+        @include desktopFirst(441) {
+        
+        }
     }
 }

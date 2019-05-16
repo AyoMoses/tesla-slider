@@ -37,10 +37,10 @@ body {
   background-position-x: 0; }
 
 .slider input[type="radio"].radio2:checked ~ .slide {
-  background-position-x: -400px; }
+  background-position-x: -200px; }
 
 .slider input[type="radio"].radio3:checked ~ .slide {
-  background-position-x: -800px; }
+  background-position-x: -400px; }
 
 .slider input[type="radio"].radio1:checked ~ .text1 {
   opacity: 1; }
