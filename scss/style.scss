@@ -67,12 +67,42 @@ body {
 
 .slider input[type="radio"].radio1:checked ~ .slide {
     background-position-x: 0;
+
+    @include desktopFirst(1100) {
+        
+    }
+    @include desktopFirst(685) {
+    
+    }
+    @include desktopFirst(441) {
+    
+    }
 }
 .slider input[type="radio"].radio2:checked ~ .slide {
-    background-position-x: -200px;
+    background-position-x: -400px;
+
+    @include desktopFirst(1100) {
+        
+    }
+    @include desktopFirst(685) {
+    
+    }
+    @include desktopFirst(441) {
+    
+    }
 }
 .slider input[type="radio"].radio3:checked ~ .slide {
-    background-position-x: -400px;
+    background-position-x: -800px;
+
+    @include desktopFirst(1100) {
+        background-position: -400px;
+    }
+    @include desktopFirst(685) {
+    
+    }
+    @include desktopFirst(441) {
+    
+    }
 }
 
 //opacity to 1 when each slide is checked
@@ -138,5 +168,19 @@ body {
         @include desktopFirst(450) {
             font-size: .8em;
         }
+    }
+}
+
+.slide {
+    background: url(../images/slider-image.jpg) no-repeat;
+
+    @include desktopFirst(1100) {
+        background: url(../images/slider-image-1500.jpg) no-repeat;
+    }
+    @include desktopFirst(685) {
+    
+    }
+    @include desktopFirst(441) {
+    
     }
 }

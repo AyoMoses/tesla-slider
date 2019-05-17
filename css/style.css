@@ -36,10 +36,13 @@ body {
   background-position-x: 0; }
 
 .slider input[type="radio"].radio2:checked ~ .slide {
-  background-position-x: -200px; }
+  background-position-x: -400px; }
 
 .slider input[type="radio"].radio3:checked ~ .slide {
-  background-position-x: -400px; }
+  background-position-x: -800px; }
+  @media screen and (max-width: 68.75em) {
+    .slider input[type="radio"].radio3:checked ~ .slide {
+      background-position: -400px; } }
 
 .slider input[type="radio"].radio1:checked ~ .text1 {
   opacity: 1; }
@@ -96,5 +99,11 @@ body {
     @media screen and (max-width: 28.125em) {
       .text-slide p {
         font-size: .8em; } }
+
+.slide {
+  background: url(../images/slider-image.jpg) no-repeat; }
+  @media screen and (max-width: 68.75em) {
+    .slide {
+      background: url(../images/slider-image-1500.jpg) no-repeat; } }
 
 /*# sourceMappingURL=style.css.map */
