@@ -13,8 +13,8 @@
 </head>
 <body>
     <section class="slider">
-        <input type="radio" name="slide" class="radio1" checked="checked">
-        <input type="radio" name="slide" class="radio2">
+        <input type="radio" name="slide" class="radio1">
+        <input type="radio" name="slide" class="radio2" checked="checked">
         <input type="radio" name="slide" class="radio3">
 
         <div class="text-slide text1">
@@ -36,7 +36,13 @@
             </p>
         </div>
 
-        <div class="slide"></div>
+        <div class="slide">
+            <img src="images/slider-image-500.jpg" 
+            alt="Slider image" 
+            srcset="images/slider-image-500.jpg 500w,
+                    images/slider-image-1000.jpg 1000w,
+                    images/slider-image-1500.jpg 1500w">
+        </div>
     </section>
 </body>
 </html>
