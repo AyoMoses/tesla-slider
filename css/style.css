@@ -26,7 +26,6 @@ body {
     left: 0;
     width: 200%;
     height: 100%;
-    background: url(../images/slider-image.jpg) no-repeat;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -53,11 +52,15 @@ body {
 
 .text-slide {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   top: 50%;
   left: 50%;
   z-index: 2;
   color: #fff;
-  text-align: center;
   opacity: 0;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);

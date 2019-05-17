@@ -52,6 +52,17 @@ body {
         -ms-transition: 1s;
         -o-transition: 1s;
     }
+
+    @include desktopFirst(1100) {
+        
+    }
+    @include desktopFirst(685) {
+    
+    }
+    @include desktopFirst(441) {
+    
+    }
+    
 }
 
 .slider input[type="radio"].radio1:checked ~ .slide {
@@ -77,11 +88,15 @@ body {
 
 .text-slide {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     top: 50%;
     left: 50%;
     z-index: 2;
     color: #fff;
-    text-align: center;
     opacity: 0;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -95,6 +110,7 @@ body {
     -o-transition: 1s;
 
     & h2 {
+
         margin: 0;
         padding: 0;
         font-size: 6em;
