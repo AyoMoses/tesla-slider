@@ -65,24 +65,14 @@ body {
     
 }
 
-.slider input[type="radio"].radio1:checked ~ .slide {
-    background-position-x: 0;
-
-    @include desktopFirst(1100) {
-        
-    }
-    @include desktopFirst(685) {
-    
-    }
-    @include desktopFirst(441) {
-    
-    }
+.slider input[type="radio"].radio1:checked ~ .slide { //clicking on 3 and using background-position alone instead of -x is default vertical (Y)
+    background-position: 0;
 }
 .slider input[type="radio"].radio2:checked ~ .slide {
-    background-position-x: -400px;
+    background-position: -400px;
 
     @include desktopFirst(1100) {
-        
+        background-position: -200px;
     }
     @include desktopFirst(685) {
     
@@ -92,10 +82,10 @@ body {
     }
 }
 .slider input[type="radio"].radio3:checked ~ .slide {
-    background-position-x: -800px;
+    background-position: -800px;
 
     @include desktopFirst(1100) {
-        background-position: -400px;
+        background-position: -400px; //clicking on 3 and using background-position alone is default vertical (Y)
     }
     @include desktopFirst(685) {
     

@@ -33,13 +33,16 @@ body {
     -o-transition: 1s; }
 
 .slider input[type="radio"].radio1:checked ~ .slide {
-  background-position-x: 0; }
+  background-position: 0; }
 
 .slider input[type="radio"].radio2:checked ~ .slide {
-  background-position-x: -400px; }
+  background-position: -400px; }
+  @media screen and (max-width: 68.75em) {
+    .slider input[type="radio"].radio2:checked ~ .slide {
+      background-position: -200px; } }
 
 .slider input[type="radio"].radio3:checked ~ .slide {
-  background-position-x: -800px; }
+  background-position: -800px; }
   @media screen and (max-width: 68.75em) {
     .slider input[type="radio"].radio3:checked ~ .slide {
       background-position: -400px; } }
