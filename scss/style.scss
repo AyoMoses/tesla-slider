@@ -75,7 +75,7 @@ body {
         background-position: -200px;
     }
     @include desktopFirst(685) {
-        background-position: -300px;
+        background-position: -200px;
     }
 }
 .slider input[type="radio"].radio3:checked ~ .slide {
@@ -85,6 +85,9 @@ body {
         background-position: -400px; //clicking on 3 and using background-position alone is default vertical (Y)
     }
     @include desktopFirst(685) {
+        background-position: -400px;
+    }
+    @include desktopFirst(420) {
         background-position: -500px;
     }
 }
@@ -166,6 +169,6 @@ body {
     @include desktopFirst(685) {
         height: 100vh;
         max-height: 100vh;
-        background: url(../images/slider-image-1500.jpg) no-repeat;
+        background: url(../images/slider-image-1100.jpg) no-repeat;
     }
 }

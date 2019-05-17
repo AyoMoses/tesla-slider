@@ -42,7 +42,7 @@ body {
       background-position: -200px; } }
   @media screen and (max-width: 42.8125em) {
     .slider input[type="radio"].radio2:checked ~ .slide {
-      background-position: -300px; } }
+      background-position: -200px; } }
 
 .slider input[type="radio"].radio3:checked ~ .slide {
   background-position: -800px; }
@@ -50,6 +50,9 @@ body {
     .slider input[type="radio"].radio3:checked ~ .slide {
       background-position: -400px; } }
   @media screen and (max-width: 42.8125em) {
+    .slider input[type="radio"].radio3:checked ~ .slide {
+      background-position: -400px; } }
+  @media screen and (max-width: 26.25em) {
     .slider input[type="radio"].radio3:checked ~ .slide {
       background-position: -500px; } }
 
@@ -120,6 +123,6 @@ body {
     .slide {
       height: 100vh;
       max-height: 100vh;
-      background: url(../images/slider-image-1500.jpg) no-repeat; } }
+      background: url(../images/slider-image-1100.jpg) no-repeat; } }
 
 /*# sourceMappingURL=style.css.map */
